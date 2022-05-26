@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,900;1,100;1,700&family=Inter&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Ahorcado</title>
+    <link rel="icon" type="image/png" href="./image/favicon.ico"/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <main class="contenedor">
+        <header class="header container-header">
+            <img src="./image/logo.svg" alt="logo">
+        </header>
+    
+        <section class="quitar ahorcados" id="ahorcado">
+            <div class="contenedor-canvas">
+           <canvas width="300" height="400"></canvas>
+             </div>
+           <div class="centrar">
+               <h2 class="quitar" id="ganado">You Win!!</h2>
+               <h2 class="quitar" id="perdido">Game Over!</h2>
+           </div>
+        </section>
+
+        <div class="contenedor-boton" id="contenedor-principal">
+            <button id="botonUno" class="boton-principal">Iniciar Juego</button>
+            <button id="botonDos" class="boton-secundario">Palabra</button>
+        </div>
+        <section class="container-left quitar" id="palabra">
+            
+            <textarea name="textoInput"  class="texto" placeholder="Ingrese la palabra que desea guardar"></textarea>
+           
+            <p class="parrafo"> <span class="simbol">&excl;</span> Palabras menor a 3 caracteres y mayor que 8</p>
+            
+            <div class="button-flex">
+            <button class="button-area" id="agregar" >Guardar y Empezar</button>
+            <button class="button-area" id="cancelar">Cancelar</button>
+            </div>
+
+            <div id="incorrecto"></div>
+        </section>
+
+        <section class="contenedor-juego">
+        <div id="palabra-juego" class="quitar"></div> 
+        <div id="palabra-abajo" class="quitar"></div>   
+         </section>
+
+        <div class="button-flex">
+            <button id="botonTres"class="quitar button-area">Nuevo Juego</button>
+            <button id= "botonCuatro" class="quitar button-area">Desistir</button>
+        </div>
+    </main>
+
+    
+
+    
+    <script src="./main.js"></script>
+</body>
+</html>
